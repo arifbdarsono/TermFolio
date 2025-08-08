@@ -12,7 +12,8 @@ body {
 .container {
     width: 90%;
     max-width: 900px;
-    position: fixed;
+    margin: 50px auto;
+    position: relative;
 }
 
 #terminalHeader {
@@ -82,7 +83,7 @@ body {
 }
 
 input {
-    width: 30%;
+    width: 70%;
     background-color: #242629;
     border-width: 0;
     color: #ddd;
@@ -99,4 +100,53 @@ a {
 }
 a:hover {
     color: #EF4F4F;
+}
+
+/* Responsive design for mobile devices */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+        margin: 20px auto;
+    }
+    
+    #terminalBody {
+        height: 25em;
+        padding: 2% 3% 0 2%;
+    }
+    
+    input {
+        width: 70%;
+    }
+    
+    #headerName {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 98%;
+        margin: 10px auto;
+    }
+    
+    #terminalBody {
+        height: 22em;
+        padding: 2% 2% 0 2%;
+    }
+    
+    input {
+        width: 65%;
+    }
+    
+    #headerName {
+        width: 25%;
+    }
+    
+    .button {
+        margin: 8px 3px 0 0;
+    }
+    
+    .buttonRed {
+        margin-left: 10px;
+    }
 }
