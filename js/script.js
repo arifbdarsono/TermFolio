@@ -38,9 +38,9 @@ const executeCommand = (command) => {
         terminalBody.innerHTML += `${data[command][i].name}: ` ;
 
         if(data[command][i].value.includes('http')){
-            terminalBody.innerHTML += `<a href="${data[command][i].value}" target="_blank">${data[command][i].value}</a>` ;
+            terminalBody.innerHTML += `<a href="${data[command][i].value}" target="_blank">${data[command][i].value}</a><br />` ;
         } else{
-            terminalBody.innerHTML += `${data[command][i].value}` ;
+            terminalBody.innerHTML += `${data[command][i].value}<br />` ;
         }
     }
 }
